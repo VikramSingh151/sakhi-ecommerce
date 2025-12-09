@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sakhi Pure Masala - Premium authentic spices from Varanasi. Founded by Saharsh Barnawal.">
+    <title>Sakhi Pure Masala | Authentic Premium Spices</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+
+<body>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">Added to cart</div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="logo-icon">
+                    <path
+                        d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0ZM20 38C10.059 38 2 29.941 2 20C2 10.059 10.059 2 20 2C29.941 2 38 10.059 38 20C38 29.941 29.941 38 20 38Z"
+                        fill="#D4AF37" />
+                    <path
+                        d="M20 5C18 10 12 18 12 24C12 28.418 15.582 32 20 32C24.418 32 28 28.418 28 24C28 18 22 10 20 5ZM20 29C17.239 29 15 26.761 15 24C15 20.5 18 15.5 20 11C22 15.5 25 20.5 25 24C25 26.761 22.761 29 20 29Z"
+                        fill="#C41E3A" />
+                    <path d="M20 15V27" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <span>Sakhi<span class="text-gold">Pure</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="cart-icon"><i class="ph-shopping-cart"></i><span class="cart-count">0</span></a>
+                </li>
+            </ul>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <i class="ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up">The Essence of <br><span class="text-gold">Varanasi</span> in Every Pinch</h1>
+            <p class="fade-in-up delay-1">Premium, hand-ground spices for the authentic Indian kitchen. Curated by
+                Saharsh Barnawal.</p>
+            <a href="#products" class="btn btn-primary fade-in-up delay-2">Explore Collection</a>
+        </div>
+    </header>
+
+    <!-- Features Strip -->
+    <section class="features">
+        <div class="container feature-grid">
+            <div class="feature-item">
+                <i class="ph-plant"></i>
+                <h3>100% Natural</h3>
+                <p>No additives, just pure spice.</p>
+            </div>
+            <div class="feature-item">
+                <i class="ph-hand-grinding"></i>
+                <h3>Stone Ground</h3>
+                <p>Traditional methods for max aroma.</p>
+            </div>
+            <div class="feature-item">
+                <i class="ph-storefront"></i>
+                <h3>Varanasi Origins</h3>
+                <p>Authentic Uttar Pradesh heritage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="text-gold">Signature</span> Blends</h2>
+                <p>Experience the finest selection of spices.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="assets/turmeric.png" alt="Royal Turmeric Powder" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Royal Turmeric</h3>
+                        <p class="price">₹149 <span class="weight">/ 200g</span></p>
+                        <button class="btn add-to-cart" data-id="1">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="assets/chili.png" alt="Kashmiri Red Chili Powder" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kashmiri Red Chili</h3>
+                        <p class="price">₹199 <span class="weight">/ 200g</span></p>
+                        <button class="btn add-to-cart" data-id="2">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="assets/coriander.png" alt="Dhania Powder" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Dhania Powder</h3>
+                        <p class="price">₹129 <span class="weight">/ 200g</span></p>
+                        <button class="btn add-to-cart" data-id="3">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="assets/garam_masala.png" alt="Special Garam Masala" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Special Garam Masala</h3>
+                        <p class="price">₹249 <span class="weight">/ 100g</span></p>
+                        <button class="btn add-to-cart" data-id="4">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="assets/cumin.png" alt="Cumin Powder (Jeera)" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cumin Powder (Jeera)</h3>
+                        <p class="price">₹139 <span class="weight">/ 200g</span></p>
+                        <button class="btn add-to-cart" data-id="5">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="assets/black_pepper.png" alt="Black Pepper (Kali Mirch)" loading="lazy"
+                            class="black-pepper-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Pepper</h3>
+                        <p class="price">₹299 <span class="weight">/ 100g</span></p>
+                        <button class="btn add-to-cart" data-id="6">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2>The Story of <span class="text-gold">Sakhi Pure</span></h2>
+                <p>Deep within the ancient lanes of Varanasi, <strong>Saharsh Barnawal</strong> founded Sakhi Pure
+                    Masala with a simple vision: to bring the unadulterated taste of home-ground spices to every Indian
+                <p>We believe that spice is not just an ingredient, but the soul of the meal. Our spices are sourced
+                    directly from farmers and ground using traditional techniques to preserve their essential oils and
+                    aroma.</p>
+                <a href="#contact" class="btn">Contact Us</a>
+            </div>
+            <div class="about-image">
+                <img src="assets/founder.jpg" alt="Saharsh Barnawal - Founder" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Sakhi<span class="text-gold">Pure</span></h3>
+                    <p>Authentic Flavors of Varanasi.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Proprietor: Saharsh Barnawal</p>
+                    <p>Varanasi, Uttar Pradesh, India</p>
+                    <p>Email: contact@sakhipure.com</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/saharsh_brnwl/?igsh=eXA3cGNzMGZ6cDky#" target="_blank"
+                            rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.facebook.com/gokusaharsh" target="_blank"
+                            rel="noopener noreferrer">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Sakhi Pure Masala. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
