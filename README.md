@@ -11,6 +11,10 @@ A premium e-commerce website designed for **Sakhi Pure Masala**, a spice brand b
 - **Social Integration**: Direct links to Instagram and Facebook profiles.
 - **Interactivity**: Smooth scrolling, hover effects, and "Add to Cart" toast notifications.
 
+## 🎥 Website Demo
+
+![Sakhi Pure Masala Demo](assets/demo.webp)
+
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic structure.
@@ -26,6 +30,7 @@ A premium e-commerce website designed for **Sakhi Pure Masala**, a spice brand b
 ├── style.css           # All styles and variables
 ├── script.js           # Navigation and interaction logic
 └── assets/             # Image directory
+    ├── demo.webp       # Website Demo Recording
     ├── founder.jpg
     ├── turmeric.png
     ├── chili.png
